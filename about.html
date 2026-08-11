@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Ahmed Mahamud Ahmed</title>
+  <meta name="description" content="Learn about Ahmed Mahamud Ahmed, a Computer Science professional focused on PostgreSQL, SQL Server, database security, cloud databases, research, monitoring and evaluation." />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-dot"></span>
+        Ahmed Mahamud Ahmed
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="mobile-toggle-btn" aria-label="Open Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <span class="nav-brand">Ahmed Mahamud</span>
+        <button class="mobile-drawer-close mobile-toggle-btn" aria-label="Close Navigation Menu">✕</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link active">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div style="margin-top: auto; padding-top: 2rem;">
+        <button class="theme-toggle-btn" style="width: 100%; border-radius: var(--radius-md);" aria-label="Toggle Theme">Toggle Dark/Light Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <div class="container">
+        <span class="badge badge-hero" style="margin-bottom: 0.8rem;">PROFESSIONAL PROFILE</span>
+        <h1 class="page-header-title">About Me</h1>
+        <p class="page-header-subtitle">
+          Computer Science professional dedicated to database administration, cloud data systems, database security, and evidence-driven research monitoring &amp; evaluation.
+        </p>
+      </div>
+    </header>
+
+    <!-- BIO SECTION -->
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid grid-2 items-center" style="gap: 3.5rem;">
+          <div class="reveal">
+            <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.25rem;">
+              Bridging Database Technology &amp; Analytical Evaluation
+            </h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.7;">
+              I am <strong>Ahmed Mahamud Ahmed</strong>, a Computer Science professional specialized in relational database administration, cloud database infrastructure, database security, and quantitative research monitoring and evaluation.
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.7;">
+              My core technical practice centers on engineering resilient database environments using PostgreSQL and Microsoft SQL Server. I specialize in database access control, disaster recovery planning, query optimization, automated backup routines, and active database monitoring.
+            </p>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+              Alongside database engineering, I am deeply committed to Research, Monitoring &amp; Evaluation (M&amp;E). I apply data-driven decision frameworks, baseline and endline evaluations, indicator design, and evidence generation to help organizations make measurable, policy-sound decisions.
+            </p>
+          </div>
+
+          <div class="profile-card reveal" style="max-width: 100%;">
+            <div class="profile-image-frame" style="width: 180px; height: 180px;">
+              <img src="assets/images/profile/profile-photo.jpg" alt="Ahmed Mahamud Ahmed Profile" class="profile-img-preview" />
+            </div>
+            <div class="profile-info">
+              <h3>Ahmed Mahamud Ahmed</h3>
+              <p style="color: var(--accent-primary); font-weight: 600;">Cloud Database Administrator &amp; M&amp;E Specialist</p>
+            </div>
+            <div style="margin-top: 1.5rem; text-align: left; background: var(--bg-tertiary); padding: 1.25rem; border-radius: var(--radius-md); font-size: 0.9rem;">
+              <div style="margin-bottom: 0.6rem; display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Core Track:</span>
+                <strong style="color: var(--text-primary);">Database Admin &amp; M&amp;E</strong>
+              </div>
+              <div style="margin-bottom: 0.6rem; display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Primary RDBMS:</span>
+                <strong style="color: var(--text-primary);">PostgreSQL / SQL Server</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Methodologies:</span>
+                <strong style="color: var(--text-primary);">M&amp;E / Evidence Analysis</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL FOCUS GRID SECTION -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 3rem auto;" class="reveal">
+          <span class="badge badge-primary" style="margin-bottom: 0.8rem;">TECHNICAL FOCUS</span>
+          <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-primary);">Core Competencies &amp; Technologies</h2>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem;">Specialized technical domains in database administration and system management.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">🐘</div>
+            <div class="tech-focus-content">
+              <h4>PostgreSQL Administration</h4>
+              <p>User role privileges, schema design, table partitioning, pg_dump/pg_restore, and server tuning.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">🖥️</div>
+            <div class="tech-focus-content">
+              <h4>SQL Server Management Studio (SSMS)</h4>
+              <p>SSMS configuration, T-SQL scripting, stored procedures, execution plan inspection, and agent jobs.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">🛡️</div>
+            <div class="tech-focus-content">
+              <h4>Database Security &amp; Access Control</h4>
+              <p>Role-based access control (RBAC), connection encryption, privilege separation, and audit logging.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">💾</div>
+            <div class="tech-focus-content">
+              <h4>Backup &amp; Recovery</h4>
+              <p>Full, differential, and transaction log backups, point-in-time restore strategies, and disaster recovery testing.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">⚡</div>
+            <div class="tech-focus-content">
+              <h4>Performance Tuning &amp; Query Optimization</h4>
+              <p>Identifying slow queries, B-Tree and GIN indexing, execution plan optimization, and buffer cache tuning.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">📊</div>
+            <div class="tech-focus-content">
+              <h4>Database Monitoring</h4>
+              <p>Tracking CPU utilization, disk I/O, active connections, lock escalation, and deadlocks in real-time.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">☁️</div>
+            <div class="tech-focus-content">
+              <h4>Cloud Databases</h4>
+              <p>Managed cloud database deployment concepts, cloud storage integration, and scalable architecture.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">⚙️</div>
+            <div class="tech-focus-content">
+              <h4>SQL &amp; Database Automation</h4>
+              <p>Automating routine administrative tasks, maintenance plans, index rebuilds, and health report scripts.</p>
+            </div>
+          </div>
+
+          <div class="tech-focus-card reveal">
+            <div class="tech-icon-box">🐳</div>
+            <div class="tech-focus-content">
+              <h4>Docker</h4>
+              <p>Containerizing database instances for isolated lab testing, staging environments, and deployment consistency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH, MONITORING & EVALUATION SECTION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="card reveal" style="padding: 3rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%); border-color: var(--accent-secondary);">
+          <div style="max-width: 850px; margin: 0 auto; text-align: center;">
+            <span class="badge badge-warm" style="margin-bottom: 1rem;">RESEARCH FOCUS</span>
+            <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.25rem;">
+              Research, Monitoring &amp; Evaluation (M&amp;E)
+            </h2>
+            <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+              Ahmed is actively focused on research systems, data-driven decision making, quantitative monitoring, program evaluation, evidence generation, and analytical reporting. By pairing database technical expertise with rigorous M&amp;E methodologies, he ensures data integrity from field collection to executive dashboards.
+            </p>
+            <div class="grid grid-3" style="text-align: left; gap: 1.5rem;">
+              <div style="background: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <h4 style="color: var(--accent-secondary); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Data-Driven Decisions</h4>
+                <p style="font-size: 0.875rem; color: var(--text-secondary);">Structuring reliable data pipelines and verified datasets for strategic decision making.</p>
+              </div>
+              <div style="background: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <h4 style="color: var(--accent-secondary); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Evidence Generation</h4>
+                <p style="font-size: 0.875rem; color: var(--text-secondary);">Generating clear empirical evidence through structured baseline, midline, and endline evaluations.</p>
+              </div>
+              <div style="background: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <h4 style="color: var(--accent-secondary); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Analytical Reporting</h4>
+                <p style="font-size: 0.875rem; color: var(--text-secondary);">Transforming raw metrics into clear analytical reports and interactive progress dashboards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          Ahmed Mahamud Ahmed
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Ahmed Mahamud Ahmed. All rights reserved. Cloud Database Administrator &amp; Research M&amp;E Specialist.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Portfolio | Ahmed Mahamud Ahmed</title>
+  <meta name="description" content="Explore database administration, PostgreSQL lab environments, SQL Server management, cloud infrastructure, and research M&E projects by Ahmed Mahamud Ahmed." />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-dot"></span>
+        Ahmed Mahamud Ahmed
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="mobile-toggle-btn" aria-label="Open Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <span class="nav-brand">Ahmed Mahamud</span>
+        <button class="mobile-drawer-close mobile-toggle-btn" aria-label="Close Navigation Menu">✕</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div style="margin-top: auto; padding-top: 2rem;">
+        <button class="theme-toggle-btn" style="width: 100%; border-radius: var(--radius-md);" aria-label="Toggle Theme">Toggle Dark/Light Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <div class="container">
+        <span class="badge badge-hero" style="margin-bottom: 0.8rem;">TECHNICAL PORTFOLIO</span>
+        <h1 class="page-header-title">Database &amp; Cloud Projects</h1>
+        <p class="page-header-subtitle">
+          Practical implementations in PostgreSQL administration, SQL Server management, database disaster recovery, performance optimization, and research M&amp;E systems.
+        </p>
+      </div>
+    </header>
+
+    <!-- FILTER BAR & PROJECTS GRID -->
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <!-- Technology Tag Filter Bar -->
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.5rem; align-items: center;" class="reveal">
+          <span style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted); margin-right: 0.5rem;">Filter by:</span>
+          <button class="btn btn-primary btn-sm project-filter-btn active" data-filter="All">All Projects</button>
+          <button class="btn btn-secondary btn-sm project-filter-btn" data-filter="PostgreSQL">PostgreSQL</button>
+          <button class="btn btn-secondary btn-sm project-filter-btn" data-filter="SQL Server">SQL Server</button>
+          <button class="btn btn-secondary btn-sm project-filter-btn" data-filter="Cloud">Cloud</button>
+          <button class="btn btn-secondary btn-sm project-filter-btn" data-filter="Security">Security &amp; DR</button>
+          <button class="btn btn-secondary btn-sm project-filter-btn" data-filter="M&E">Research &amp; M&amp;E</button>
+        </div>
+
+        <!-- Dynamic Projects Grid Container (Populated via data/projects.js & js/projects.js) -->
+        <div class="grid grid-3" id="projects-grid">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          Ahmed Mahamud Ahmed
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Ahmed Mahamud Ahmed. All rights reserved. Cloud Database Administrator &amp; Research M&amp;E Specialist.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Modules: data/projects.js loaded first -->
+  <script src="js/theme.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

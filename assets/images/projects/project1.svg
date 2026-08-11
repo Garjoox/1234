@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="pgAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="12" fill="url(#p1Grad)"/>
+  <g opacity="0.15">
+    <path d="M 0 60 H 600 M 0 120 H 600 M 0 180 H 600 M 0 240 H 600 M 0 300 H 600" stroke="#38BDF8" stroke-width="1"/>
+    <path d="M 100 0 V 360 M 200 0 V 360 M 300 0 V 360 M 400 0 V 360 M 500 0 V 360" stroke="#38BDF8" stroke-width="1"/>
+  </g>
+  <!-- Database Stack -->
+  <g transform="translate(180, 80)">
+    <!-- Top Cylinder -->
+    <ellipse cx="120" cy="40" rx="100" ry="30" fill="url(#pgAccent)" opacity="0.9"/>
+    <ellipse cx="120" cy="40" rx="90" ry="25" fill="#0F172A"/>
+    <!-- Middle Cylinder -->
+    <path d="M 20 40 V 100 A 100 30 0 0 0 220 100 V 40 Z" fill="#0284C7" opacity="0.8"/>
+    <path d="M 20 100 V 160 A 100 30 0 0 0 220 160 V 100 Z" fill="#0F3765" opacity="0.9"/>
+    <!-- Bottom Cylinder -->
+    <path d="M 20 160 V 210 A 100 30 0 0 0 220 210 V 160 Z" fill="#0369A1"/>
+    <ellipse cx="120" cy="210" rx="100" ry="30" fill="#0284C7" opacity="0.5"/>
+  </g>
+  <!-- Terminal Code Overlay -->
+  <rect x="50" y="220" width="220" height="100" rx="8" fill="#090D16" stroke="#38BDF8" stroke-width="1.5" opacity="0.95"/>
+  <circle cx="70" cy="235" r="4" fill="#EF4444"/>
+  <circle cx="82" cy="235" r="4" fill="#F59E0B"/>
+  <circle cx="94" cy="235" r="4" fill="#10B981"/>
+  <text x="65" y="260" font-family="monospace" font-size="11" fill="#38BDF8">postgres=# SELECT * FROM</text>
+  <text x="65" y="280" font-family="monospace" font-size="11" fill="#F8FAFC">  pg_stat_activity;</text>
+  <text x="65" y="300" font-family="monospace" font-size="11" fill="#10B981">STATUS: OPTIMAL (0.4ms)</text>
+
+  <!-- Tag Label -->
+  <rect x="420" y="35" width="145" height="32" rx="16" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1"/>
+  <text x="492" y="56" font-family="sans-serif" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle">POSTGRESQL LAB</text>
+</svg>
