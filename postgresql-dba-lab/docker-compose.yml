@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Primary PostgreSQL Database Instance
+  postgres-primary:
+    image: postgres:16-alpine
+    container_name: postgres_primary_lab
+    restart: always
+    environment:
+      POSTGRES_DB: dba_lab_db
+      POSTGRES_USER: lab_admin
+      POSTGRES_PASSWORD: AdminSecurePassword123!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_primary_data:/var/lib/postgresql/data
+      - ./config/postgresql.conf:/etc/postgresql/postgresql.conf:ro
+      - ./config/pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+      - ./scripts:/docker-entrypoint-initdb.d
+    networks:
+      - dba_lab_network
+
+  # Standby / Replica PostgreSQL Instance (Replication Lab)
+  postgres-replica:
+    image: postgres:16-alpine
+    container_name: postgres_replica_lab
+    restart: always
+    environment:
+      POSTGRES_USER: lab_admin
+      POSTGRES_PASSWORD: AdminSecurePassword123!
+    ports:
+      - "5433:5432"
+    depends_on:
+      - postgres-primary
+    volumes:
+      - postgres_replica_data:/var/lib/postgresql/data
+    networks:
+      - dba_lab_network
+
+  # pgAdmin 4 Management Dashboard UI
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_lab
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@dbalab.local
+      PGADMIN_DEFAULT_PASSWORD: PgAdminPassword123!
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres-primary
+    networks:
+      - dba_lab_network
+
+volumes:
+  postgres_primary_data:
+  postgres_replica_data:
+
+networks:
+  dba_lab_network:
+    driver: bridge
